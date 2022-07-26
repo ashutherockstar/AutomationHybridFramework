@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-InetBankingV1" class="navigator-link">
-              <span class="suite-name border-passed">InetBankingV1</span>
+              <span class="suite-name border-failed">InetBankingV1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-InetBankingV1" class="hide-methods passed suite-InetBankingV1"> (hide)</a> <!-- hide-methods passed suite-InetBankingV1 -->
-                      <a href="#" panel-name="suite-InetBankingV1" class="show-methods passed suite-InetBankingV1"> (show)</a> <!-- show-methods passed suite-InetBankingV1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-InetBankingV1" class="hide-methods failed suite-InetBankingV1"> (hide)</a> <!-- hide-methods failed suite-InetBankingV1 -->
+                      <a href="#" panel-name="suite-InetBankingV1" class="show-methods failed suite-InetBankingV1"> (show)</a> <!-- show-methods failed suite-InetBankingV1 -->
                     </span>
-                    <div class="method-list-content passed suite-InetBankingV1">
+                    <div class="method-list-content failed suite-InetBankingV1">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InetBankingV1" title="com.inetbanking.testCases.TC_addNewAccount" class="method navigator-link" hash-for-method="addnewAccount">addnewAccount</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-InetBankingV1" title="com.inetbanking.testCases.TC_LoginTest_001" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-InetBankingV1 -->
+                    </div> <!-- method-list-content failed suite-InetBankingV1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,21 +117,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-InetBankingV1" class="panel InetBankingV1">
-          <div class="suite-InetBankingV1-class-passed">
+          <div class="suite-InetBankingV1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.inetbanking.testCases.TC_addNewAccount</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.inetbanking.testCases.TC_LoginTest_001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addnewAccount">
-                  </a> <!-- addnewAccount -->
-                  <span class="method-name">addnewAccount</span>
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.inetbanking.testCases.TC_LoginTest_001.loginTest(TC_LoginTest_001.java:41)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-InetBankingV1-class-passed -->
+          </div> <!-- suite-InetBankingV1-class-failed -->
         </div> <!-- panel InetBankingV1 -->
         <div panel-name="test-xml-InetBankingV1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -148,7 +152,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;BankingApp Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.inetbanking.testCases.TC_addNewAccount&quot;/&gt;
+      &lt;class name=&quot;com.inetbanking.testCases.TC_LoginTest_001&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BankingApp Test --&gt;
 &lt;/suite&gt; &lt;!-- InetBankingV1 --&gt;
@@ -190,9 +194,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addnewAccount')
-data.setCell(0, 2, 'com.inetbanking.testCases.TC_addNewAccount')
-data.setCell(0, 3, 12326);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.inetbanking.testCases.TC_LoginTest_001')
+data.setCell(0, 3, 12722);
 window.suiteTableData['InetBankingV1']= { tableData: data, tableDiv: 'times-div-InetBankingV1'}
 return data;
 }
@@ -223,15 +227,21 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inetbanking.testCases.TC_addNewAccount</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inetbanking.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">addnewAccount</span>
-                <span class="method-start">30376 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">31460 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44286 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -237,3 +237,44 @@
 2022-06-19 01:59:34,070 - ebanking -INFO - Account Type Selected
 2022-06-19 01:59:34,232 - ebanking -INFO - Intial Deposit
 2022-06-19 01:59:36,399 - ebanking -INFO - test case passed....
+2022-07-02 22:40:05,333 - ebanking -INFO - User name is provided
+2022-07-02 22:40:05,750 - ebanking -INFO - Passsword is provided
+2022-07-02 22:40:12,940 - ebanking -INFO - Clicked On New Account
+2022-07-02 22:40:13,094 - ebanking -INFO - Enter Cust Id
+2022-07-02 22:40:13,648 - ebanking -INFO - Account Type Selected
+2022-07-02 22:40:13,788 - ebanking -INFO - Intial Deposit
+2022-07-02 22:40:15,641 - ebanking -INFO - test case passed....
+2022-07-03 02:25:06,819 - ebanking -INFO - User name is provided
+2022-07-03 02:25:07,009 - ebanking -INFO - Passsword is provided
+2022-07-03 02:26:00,987 - ebanking -INFO - User name is provided
+2022-07-03 02:26:01,216 - ebanking -INFO - Passsword is provided
+2022-07-03 02:26:08,575 - ebanking -INFO - Clicked On New Account
+2022-07-03 02:26:09,129 - ebanking -INFO - Enter Cust Id
+2022-07-03 02:26:09,423 - ebanking -INFO - Account Type Selected
+2022-07-03 02:26:09,605 - ebanking -INFO - Intial Deposit
+2022-07-03 02:26:11,403 - ebanking -INFO - test case passed....
+2022-07-03 02:30:02,628 - ebanking -INFO - User name is provided
+2022-07-03 02:30:03,103 - ebanking -INFO - Passsword is provided
+2022-07-03 02:31:34,948 - ebanking -INFO - User name is provided
+2022-07-03 02:31:35,108 - ebanking -INFO - Passsword is provided
+2022-07-03 02:57:21,237 - ebanking -INFO - User name is provided
+2022-07-03 02:57:21,461 - ebanking -INFO - Passsword is provided
+2022-07-03 02:57:28,706 - ebanking -INFO - Clicked On New Account
+2022-07-03 02:57:29,008 - ebanking -INFO - Enter Cust Id
+2022-07-03 02:57:30,015 - ebanking -INFO - Account Type Selected
+2022-07-03 02:57:30,310 - ebanking -INFO - Intial Deposit
+2022-07-03 02:57:32,196 - ebanking -INFO - test case passed....
+2022-07-03 03:21:32,136 - ebanking -INFO - User name is provided
+2022-07-03 03:21:32,417 - ebanking -INFO - Passsword is provided
+2022-07-14 12:30:41,104 - ebanking -INFO - User name is provided
+2022-07-14 12:30:41,278 - ebanking -INFO - Passsword is provided
+2022-07-14 12:32:26,557 - ebanking -INFO - User name is provided
+2022-07-14 12:32:26,913 - ebanking -INFO - Passsword is provided
+2022-07-14 12:34:17,180 - ebanking -INFO - User name is provided
+2022-07-14 12:34:17,382 - ebanking -INFO - Passsword is provided
+2022-07-14 12:37:30,163 - ebanking -INFO - URL is opened
+2022-07-14 12:37:33,424 - ebanking -INFO - Entered username
+2022-07-14 12:37:33,563 - ebanking -INFO - Entered password
+2022-07-24 12:46:48,258 - ebanking -INFO - URL is opened
+2022-07-24 12:46:51,758 - ebanking -INFO - Entered username
+2022-07-24 12:46:51,984 - ebanking -INFO - Entered password

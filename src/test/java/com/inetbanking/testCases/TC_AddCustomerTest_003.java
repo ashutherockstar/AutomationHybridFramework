@@ -1,6 +1,7 @@
 package com.inetbanking.testCases;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.WebDriver;
@@ -16,7 +17,7 @@ public class TC_AddCustomerTest_003 extends BaseClass
 {
 
 	@Test
-	public void addNewCustomer() throws InterruptedException, IOException
+	public void addNewCustomer() throws  IOException, InterruptedException
 	{
 		LoginPage lp=new LoginPage(driver);
 		lp.setUserName(username);
@@ -25,7 +26,7 @@ public class TC_AddCustomerTest_003 extends BaseClass
 		logger.info("Passsword is provided");
 		lp.clickSubmit();
 		
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		AddCustomerPage addcust=new AddCustomerPage(driver);
 		
@@ -46,7 +47,6 @@ public class TC_AddCustomerTest_003 extends BaseClass
 		addcust.custName("Ashu");
 		addcust.custgender("male");
 		addcust.custdob("10","15","1997");
-		Thread.sleep(5000);
 		addcust.custaddress("INDIA");
 		addcust.custcity("HYD");
 		addcust.custstate("AP");
